@@ -299,9 +299,9 @@ function App() {
   const [chartTitle, setChartTitle] = useState("");
   const [myStatus, setMyStatus] = useState("");
 
-  socket.on("updateData", async (arg) => {
-    setMyData([...myData, arg.data]);
-  });
+  // socket.on("updateData", async (arg) => {
+  //   setMyData([...myData, arg.data]);
+  // });
 
   const handleMonth = async () => {
     const res = await fetch("http://localhost:3002/getdata");
